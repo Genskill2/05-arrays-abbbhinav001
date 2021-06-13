@@ -54,7 +54,7 @@ int frequency(int f[], int l, int n)
 
 int factors(int n, int a[])
 {
-	int fac[100], i = 2, j, c, index = 0;
+	int i = 2, j, c, index = 0;
 	while(n!=1)
 	{
 		if(n%i==0)
@@ -65,7 +65,7 @@ int factors(int n, int a[])
 					c++;
 			if(c==0)
 			{
-				fac[index] = i;
+				a[index] = i;
 				n /= i;
 				index++;
 				continue;
