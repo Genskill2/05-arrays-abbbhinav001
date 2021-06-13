@@ -73,7 +73,5 @@ int factors(int n, int a[])
 		}
 		i++;
 	}
-	for(i=0;i<index;i++)
-		printf("%d\n",fac[i]);
 	return index;
 }
